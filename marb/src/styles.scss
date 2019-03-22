@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+//@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@include mat-core();
+
+$Marb-primary:      mat-palette($mat-grey, 900, 0, 0);
+$Marb-accent:       mat-palette($mat-pink, 600, 0, 0);
+$Marb-warn:         mat-palette($mat-deep-orange);
+$Marb-light-theme:  mat-palette($mat-pink, 0);
+$Marb-dark-theme:   mat-palette($mat-grey, 700);
+
+$Marb-theme: mat-light-theme($Marb-primary, $Marb-accent, $Marb-warn);
+
+@include angular-material-theme($Marb-theme);
+
+
+body {    
+    margin: 0px;
+}
+
+.header {
+    padding: 8px 16px;
+}
+
+.fill-space {
+    flex:  1 1 auto;
+}
+
+.wrapper {
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.page {
+    background-color: #3F3F3F;
+}

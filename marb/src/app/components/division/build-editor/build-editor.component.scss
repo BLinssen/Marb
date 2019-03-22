@@ -1,0 +1,26 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+
+.mat-divider {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.label-grid {
+    color: white;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.d2divider {
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+    height: 1px;
+}
+
+.actions-button-row button,
+.actions-button-row a {
+  margin-right: 8px;
+}
