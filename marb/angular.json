@@ -24,12 +24,10 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "../node_modules/cookieconsent/build/cookieconsent.min.js"
+              "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "../node_modules/cookieconsent/build/cookieconsent.min.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "es5BrowserSupport": true
