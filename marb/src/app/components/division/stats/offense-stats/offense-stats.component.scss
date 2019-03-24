@@ -1,0 +1,34 @@
+tr.mat-header-row {
+    display: none;
+}
+
+tr.mat-row:nth-child(odd) {
+    background-color: #2F2F2F;
+    height: 36px;
+}
+
+tr.mat-row:nth-child(even) {
+    background-color: #3F3F3F;
+    height: 36px;
+}
+
+table {
+    width: 100%;
+}
+
+.value-row {
+    color: rgb(251,125,1);
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    width: 60px;
+}
+
+.stat-row {
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mat-expansion-panel-body {
+    padding: 0 10px 0px;
+}

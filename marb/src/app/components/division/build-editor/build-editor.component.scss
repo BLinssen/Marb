@@ -2,6 +2,7 @@ mat-grid-tile {
     background: lightblue;
   }
 
+
 .mat-divider {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -14,7 +15,7 @@ mat-grid-tile {
 }
 
 .d2divider {
-    background-color: white;
+    background-color: #8F8F8F;
     width: 100%;
     margin-top: 20px;
     height: 1px;
@@ -24,3 +25,42 @@ mat-grid-tile {
 .actions-button-row a {
   margin-right: 8px;
 }
+
+.grid-left {
+  float: left;
+  width: 35%;
+}
+
+.grid-right {
+  float: right;
+  width: 64%;
+  padding-left: 1%;
+}
+
+.build_link_form {
+  width: 400px;
+}
+
+.slot-image {
+  width: 100%;
+  height: 100%;
+}
+
+.slot-button {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+}
+
+.spec-button {
+  line-height: 6rem;
+  width: 7.3rem;
+}
+
+mat-expansion-panel-header {
+  background-color: #2F2F2F;
+  }
+
+mat-expansion-panel {
+  background-color: #2F2F2F;
+  }

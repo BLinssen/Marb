@@ -37,4 +37,18 @@ body {
 
 .page {
     background-color: #3F3F3F;
+    overflow: auto;
+}
+
+html,body {
+    min-height:100%;
+    background-color: #3F3F3F;
+}
+
+.specific-class > .mat-expansion-indicator, .mat-expansion-indicator:after {
+    color: white !important;
+  }
+
+.mat-expansion-panel-body {
+    padding: 0 10px 10px !important;
 }

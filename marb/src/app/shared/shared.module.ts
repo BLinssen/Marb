@@ -14,6 +14,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 
@@ -33,6 +34,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatTooltipModule,
         MatInputModule,
         MatSnackBarModule,
+        MatExpansionModule,
     ],
     exports: [
         MatToolbarModule,
@@ -49,6 +51,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
         MatTooltipModule,
         MatInputModule,
         MatSnackBarModule,
+        MatExpansionModule,
     ]
 })
 export class SharedModule {}

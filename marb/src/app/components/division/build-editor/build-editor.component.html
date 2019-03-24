@@ -1,45 +1,113 @@
-<div class="actions-button-row">
-    <button mat-raised-button color="primary">
-        <mat-icon>save</mat-icon>
-      Save build
-    </button>
-    <button mat-raised-button color="primary" (click)="openSnackBar()">
-        <mat-icon>share</mat-icon>
-      Get build link
-    </button>
-  </div>
+<!-- <div class="grid-top">
+    <div class="actions-button-row">
+        <button mat-raised-button color="primary" (click)="openSnackBar()">
+            <mat-icon>save</mat-icon>
+          Save build
+        </button>
+        <button mat-raised-button color="primary" (click)="openSnackBar()">
+            <mat-icon>share</mat-icon>
+          Get build link
+        </button>        
+        <button mat-raised-button color="primary" (click)="openSnackBar()">
+            <mat-icon>open_in_browser</mat-icon>
+          Load build link
+        </button>
+        <mat-form-field class="build-link-form">
+            <input matInput placeholder="Build link" class="build-link-input">
+          </mat-form-field>
+      </div>
+</div> -->
 
-  <br>
 
-<p class="label-grid">Weapons</p>
+<div class="grid-left">
 
-<mat-grid-list cols="2" rowHeight="10rem">
-    <mat-grid-tile>Specialization</mat-grid-tile>
-    <mat-grid-tile>Sidearm</mat-grid-tile>
-    <mat-grid-tile>Primary</mat-grid-tile>
-    <mat-grid-tile>Secondary</mat-grid-tile>  
-  </mat-grid-list>
+    <mat-accordion multi="true" class="mat-accordion-stats">
+        <mat-expansion-panel expanded="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <p class="label-grid">Stats</p>
+            </mat-panel-title>
+          </mat-expansion-panel-header>    
+          <app-stats></app-stats>
+        </mat-expansion-panel>
 
-<div class="d2divider"></div>
+          <mat-expansion-panel expanded="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <p class="label-grid">Saved Builds</p>
+                </mat-panel-title>
+              </mat-expansion-panel-header>          
+              <app-builds></app-builds>              
+            </mat-expansion-panel>
+      </mat-accordion>     
+</div>
 
-<p class="label-grid">Gear</p>
+<div class="grid-right">
 
-<mat-grid-list cols="2" rowHeight="10rem">
-    <mat-grid-tile>Mask</mat-grid-tile>
-    <mat-grid-tile>Backpack</mat-grid-tile>
-    <mat-grid-tile>Armor</mat-grid-tile>
-    <mat-grid-tile>Gloves</mat-grid-tile>
-    <mat-grid-tile>Ear</mat-grid-tile>
-    <mat-grid-tile>Kneepads</mat-grid-tile>
-  </mat-grid-list>
+    <mat-accordion multi="true" class="mat-accordion-stats">
+        <mat-expansion-panel expanded="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <p class="label-grid">Weapons</p>
+            </mat-panel-title>
+          </mat-expansion-panel-header>    
+          
+          <mat-grid-list cols="2" rowHeight="8rem" [gutterSize]="'1rem'">
+              <mat-grid-tile>
+                <!-- <button mat-button (onclick)="openSnackBar()" class="slot-button" layout-fill> -->
+                <!-- <img src="../../../../assets/images/slot.png" class="slot-image" layout-fill> -->
+                <mat-button-toggle-group #group="matButtonToggleGroup">
+                    <mat-button-toggle value="Sharpshooter" class="spec-button">
+                      <mat-icon>format_align_left</mat-icon>
+                    </mat-button-toggle>
+                    <mat-button-toggle value="Survivalist" class="spec-button">
+                      <mat-icon>format_align_center</mat-icon>
+                    </mat-button-toggle>
+                    <mat-button-toggle value="Demolitionist" class="spec-button">
+                      <mat-icon>format_align_right</mat-icon>
+                    </mat-button-toggle>
+                  </mat-button-toggle-group>
+                  <br>
+                  <div class="example-selected-value">{{group.value}}</div>
+              <!-- </button> -->
+              </mat-grid-tile>
+              <mat-grid-tile>Sidearm</mat-grid-tile>
+              <mat-grid-tile>Primary</mat-grid-tile>
+              <mat-grid-tile>Secondary</mat-grid-tile>  
+            </mat-grid-list>
 
-  <div class="d2divider"></div>
+        </mat-expansion-panel>
 
-<p class="label-grid">Skills</p>
+          <mat-expansion-panel expanded="true">
+              <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <p class="label-grid">Gear</p>
+                </mat-panel-title>
+              </mat-expansion-panel-header>          
+                          
+              <mat-grid-list cols="2" rowHeight="8rem" [gutterSize]="'1rem'">
+                  <mat-grid-tile>Mask</mat-grid-tile>
+                  <mat-grid-tile>Backpack</mat-grid-tile>
+                  <mat-grid-tile>Armor</mat-grid-tile>
+                  <mat-grid-tile>Gloves</mat-grid-tile>
+                  <mat-grid-tile>Ear</mat-grid-tile>
+                  <mat-grid-tile>Kneepads</mat-grid-tile>
+                </mat-grid-list>
 
-<mat-grid-list cols="2" rowHeight="10rem">
-    <mat-grid-tile>Primary Skill</mat-grid-tile>
-    <mat-grid-tile>Secondary Skill</mat-grid-tile>
-  </mat-grid-list>
+            </mat-expansion-panel>
 
-  <br>
+            <mat-expansion-panel expanded="true">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                      <p class="label-grid">Skills</p>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>          
+                          
+                <mat-grid-list cols="2" rowHeight="8rem" [gutterSize]="'1rem'">
+                    <mat-grid-tile>Primary Skill</mat-grid-tile>
+                    <mat-grid-tile>Secondary Skill</mat-grid-tile>
+                  </mat-grid-list>
+
+              </mat-expansion-panel>
+      </mat-accordion>     
+</div>
