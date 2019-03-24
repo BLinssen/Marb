@@ -14,6 +14,7 @@ import { WeaponStatsComponent } from './components/division/stats/weapon-stats/w
 import { OffenseStatsComponent } from './components/division/stats/offense-stats/offense-stats.component';
 import { DefenseStatsComponent } from './components/division/stats/defense-stats/defense-stats.component';
 import { SkillsStatsComponent } from './components/division/stats/skills-stats/skills-stats.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SkillsStatsComponent } from './components/division/stats/skills-stats/s
     OffenseStatsComponent,
     DefenseStatsComponent,
     SkillsStatsComponent,
+    CookiesComponent,
   ],
   imports: [
     BrowserModule,
